@@ -1,0 +1,476 @@
+/*Popup simples*/
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#sobrenos {
+  left: 35%;
+  position: sticky;
+  color: white;
+}
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/*SENTIMENTOS*/
+#Emoticons {
+  border-radius: 20px;
+  padding: 2px;
+  background-color: rgba(141, 89, 21, 0.212);
+  display: inline-block;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/*Sumir quando aparecer*/
+#sumir {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(20, 20, 20, 0.5);
+  color: white;
+  animation: fadeOut ease 6s both;
+  animation-fill-mode: both;
+  visibility: visible;
+  display: table;
+  padding: 6px;
+  border-radius: 20px 5px;
+}
+#hora {
+  animation: fadeIn 1.5s;
+  margin-left: 58%;
+  margin-bottom: -1%;
+  white-space: normal;
+  display: table;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 3px;
+  border-radius: 20px;
+  border-color: rgba(255, 255, 255, 0);
+  transition: 0.5s;
+  float: right;
+}
+#hora:hover {
+  border-radius: 0px;
+  font-size: 16px;
+  padding: 3px;
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*------------*/
+a {
+  color: #ffffff;
+}
+body {
+  background: linear-gradient(to right bottom, #4154a8, #6fa1ff);
+  font-family: monospace;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*Aqui vai mudar a cor da caixa do formulário*/
+summary {
+  color: white;
+  color: rgb(207, 191, 99);
+  background-color: rgba(15, 14, 15, 0.4);
+  border: 0px solid #666;
+  border-radius: 10px;
+  width: max-content;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+fieldset {
+  color: white;
+  font-size: 22px;
+  color: rgb(207, 191, 99);
+  background-color: rgba(15, 14, 15, 0.9);
+  border: 0px solid #666;
+  border-radius: 1px;
+  width: calc(40% + 300px);
+  margin-left: auto;
+  margin-right: auto;
+}
+i {
+  transition: 0.2s;
+}
+i:hover {
+  transition: 0.2s;
+  padding: 2px;
+  font-size: x-large;
+}
+legend {
+  background-color: rgba(0, 0, 0, 0.45);
+  border-radius: 8px;
+  transition: 0.5s;
+  white-space: normal;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.3s;
+}
+legend:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.2px;
+  color: black;
+  font-size: 22px;
+  transition: 0.3s;
+}
+input {
+  border-radius: 20px;
+  font-family: monospace;
+}
+/*Essa div será para guardar os dados, logo será invisivel os seus inputs.*/
+#guardardados {
+  visibility: hidden;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  border-radius: 4px;
+  padding: 4px;
+  font-family: monospace;
+  width: 51%;
+  border-width: 3px;
+  border-color: rgba(0, 0, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 0.6s;
+}
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+  border-radius: 20px;
+  padding: 4.5px;
+  width: 53%;
+  font-size: 16px;
+  border-color: rgba(0, 0, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: 0.4s;
+}
+textarea {
+  width: 30%;
+  height: 35%;
+}
+h1 {
+  background-color: rgba(179, 243, 255, 0.3);
+  border-radius: 20px;
+  padding: 20px;
+  font-family: monospace;
+}
+hr {
+  border: 0.1px solid;
+  border-radius: 20px;
+  width: 75%;
+  box-shadow: 0 0 2px 1px rgb(22, 73, 131);
+  color: #4154a8;
+}
+#cut {
+  border: 0.1px dashed;
+
+  color: #4154a8;
+  border-radius: 20px;
+  width: 2%;
+}
+#middle {
+  border: 0.05px solid;
+  color: rgb(207, 191, 99);
+  width: 15%;
+  height: 0; /* Firefox... */
+  box-shadow: 0 0 4px 1px rgb(131, 124, 22);
+}
+p {
+  animation: fadeIn 0.5s;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px; /*Isso regula a volta da borda*/
+  border-color: #cef6f5;
+  border-width: 2px;
+  padding: 5px;
+  border-style: solid;
+  white-space: normal;
+  display: table;
+  font-family: monospace;
+}
+button,
+input[type="submit"] {
+  display: flex;
+  cursor: pointer;
+  outline: none;
+  
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: normal;
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 4px;
+  border-color: rgba(0, 0, 0, 0);
+  width: 40%;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  width: 41%;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: 0.5s;
+  background-color: #a4a4a4;
+  transition: 0.4s;
+}
+
+button:active,
+input[type="submit"]:active {
+  background-color: #fafafa;
+  box-shadow: 0 5px #666;
+  width: 45%;
+  transition: 0.1s;
+  transform: translateY(4px);
+}
+/*Custumizando as tabelas:*/
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  background-color: #e99700;
+  background-image: linear-gradient(160deg, #ffe26f 0%, #ffad33 100%);
+  /*background-color: rgba(202, 60, 17, 0.301);*/
+  border-radius: 10px;
+  transition: 0.8s;
+}
+table:hover {
+  width: 100%;
+  table-layout: fixed;
+  background-color: #e99700;
+  background-image: linear-gradient(160deg, #ffe16f 0%, #ffad33 100%);
+  border-radius: 10px;
+  transition: 0.6s;
+}
+#fielddata {
+  border-radius: 20px;
+  color: white;
+  color: rgb(255, 255, 255);
+  background-color: rgb(15, 15, 14);
+  width: calc(50% + 220px);
+  margin-left: auto;
+  margin-right: auto;
+}
+#dado {
+  color: rgb(247, 216, 159);
+  background-color: rgb(0, 0, 0, 0.2);
+  font-size: calc(80% + 0.2px);
+  transition: 1s;
+}
+#dado:hover {
+  font-size: calc(81% + 0.2px);
+
+  background-color: rgb(0, 0, 0, 1);
+  transition: 1s;
+  padding: 2%;
+  border-radius: 20px 20px 0px 0px;
+}
+th {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 8px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgb(255, 233, 208);
+  text-transform: uppercase;
+  transition: 0.4s;
+  text-align: center;
+}
+th:hover {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.85);
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  transition: 0.4s;
+  padding: 9px;
+}
+td {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  color: #fff;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+  transition: 0.4s;
+}
+td:hover {
+  padding: 5.5px;
+  transition: 0.4s;
+}
+aside {
+  width: 50%;
+  font-style: italic;
+  float: left;
+  color: white;
+  margin-top: 2%;
+}
+section {
+  font-style: italic;
+  color: white;
+  margin-top: 1%;
+}
+main {
+  float: left;
+  width: 50%;
+}
+@media (max-width: 700px) {
+    
+#hora {
+  margin-left: 58%;
+  margin-bottom: -1%;
+  white-space: normal;
+  display: table;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 3px;
+  border-radius: 20px;
+  border-color: rgba(255, 255, 255, 0);
+  transition: 0.5s;
+  float: right;
+}
+
+  fieldset {
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    color: rgb(207, 191, 99);
+    background-color: rgba(15, 14, 15, 0.9);
+    width: 90%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #fielddata {
+    border-radius: 5px;
+    color: white;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 1);
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: scroll;
+  }
+
+  table {
+    width: calc(200px + 200%);
+    table-layout: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(
+      160deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+    padding: 0px;
+    border-radius: 0px;
+    transition: 0.9s;
+  }
+  table:hover {
+    width: calc(200px + 200%);
+    padding: 0px;
+    table-layout: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(
+      160deg,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+    border-radius: 2px;
+    transition: 0.6s;
+  }
+  td {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 6px;
+    color: #fff;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+    transition: 0.4s;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    border-radius: 4px;
+    padding: 4px;
+    font-family: monospace;
+    width: 51%;
+    border-width: 3px;
+    border-color: rgba(255, 153, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: 0.6s;
+  }
+  input[type="text"]:hover,
+  input[type="password"]:hover,
+  input[type="email"]:hover {
+    border-radius: 4px;
+    padding: 4px;
+    font-family: monospace;
+    width: 51%;
+    border-width: 3px;
+    border-color: rgba(255, 153, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: 0.6s;
+  }
+  
+}
