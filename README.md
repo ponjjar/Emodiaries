@@ -18,3 +18,16 @@ possível pesquisar o conteúdo das postagens, titulo, nome de usuário e entre 
 O desenvolvimento teve um período de 6 meses, utilizando uma linguagem não
 tão complexa de desenvolvimento e um banco de dados simplificado, porém, acabou
 impulsionando e criando uma agilidade na compreensão
+
+
+## RESULTADOS
+  Em poucos dias da publicação do site já tivemos muitos usuários e postagens do
+site, ficamos assustados pois não esperávamos tantos usuários de imediato. Mesmo
+sendo de nosso conhecimento que uma pequena quantia de usuários foram amigos,
+ficamos muito contentes com o público que alcançamos logo no início.
+  Ao todo, com que analisamos, os posts no site mostram que em geral a média
+dentre todos usuários no site tende a não se concentrar em um grande percentual de
+postagens apenas de bom humor, ou de mal humor, na verdade as notas de todos
+usuários do site são bem equilibradas, mostrando que mesmo alguns usuários tendo
+alguns dias uma maior taxa de notas de humor negativo, após um tempo eles também
+tem uma taxa de humor positivo
