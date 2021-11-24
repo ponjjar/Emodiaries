@@ -1,4 +1,14 @@
-# Emodiaries
+## Emodiaries - Introdução
+  O projeto tem como base criar uma aplicação web para anotação de conteúdos,
+como diários e emoções. As anotações estarão organizadas de acordo com a data, e
+com esses dados, apresentará um gráfico de emoções.
+  O gráfico mostra a variação de humor de acordo com a quantidade de notas
+feitas.
+  Exibindo também em um gráfico estilo pizza, as percentagens de cada emoção
+respectivamente com base nas anotações do usuário.
+  O mesmo também terá acesso a um mural com as notas de todos os usuários que
+também utilizarem o site, também exibindo o “Nickname” e a emoção da nota do
+respectivo usuário.
 
 ## Desenvolvimento do Sistema
 - Introdução ao desenvolvimento:
@@ -31,3 +41,5 @@ postagens apenas de bom humor, ou de mal humor, na verdade as notas de todos
 usuários do site são bem equilibradas, mostrando que mesmo alguns usuários tendo
 alguns dias uma maior taxa de notas de humor negativo, após um tempo eles também
 tem uma taxa de humor positivo
+
+
