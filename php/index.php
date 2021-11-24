@@ -394,4 +394,10 @@ $(document).ready(function () {
 });
 </script>
 
+<!--
+ ／l、
+ﾞ（ﾟ､ ｡７
+　l、~ヽ ~ C.P.
+　じしf_,)ノ
+ !-->
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
