@@ -30,7 +30,7 @@ tão complexa de desenvolvimento e um banco de dados simplificado, porém, acabo
 impulsionando e criando uma agilidade na compreensão
 
 
-## RESULTADOS
+## Resultado
   Em poucos dias da publicação do site já tivemos muitos usuários e postagens do
 site, ficamos assustados pois não esperávamos tantos usuários de imediato. Mesmo
 sendo de nosso conhecimento que uma pequena quantia de usuários foram amigos,
